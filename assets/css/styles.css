@@ -1,0 +1,159 @@
+ *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+    }
+
+    /* HEADER */
+    header{
+      width:100%;
+      background:#111;
+      padding:15px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:relative;
+    }
+
+    .logo{
+      color:white;
+      font-size:28px;
+      font-weight:bold;
+    }
+
+    /* NAV */
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:30px;
+      align-items:center;
+    }
+
+    nav ul li{
+      position:relative;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:white;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#00bfff;
+    }
+
+    /* BOTÓN MENU */
+    .menu-btn{
+      cursor:pointer;
+      background:#00bfff;
+      color:white;
+      padding:10px 18px;
+      border-radius:8px;
+      transition:0.3s;
+    }
+
+    .menu-btn:hover{
+      background:#0099cc;
+    }
+
+    /* MENU OCULTO */
+    .dropdown{
+      position:absolute;
+      top:50px;
+      right:0;
+      background:white;
+      width:220px;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+      opacity:0;
+      visibility:hidden;
+      transform:translateY(10px);
+      transition:0.3s;
+    }
+
+    /* Mostrar al pasar cursor */
+    .menu-container:hover .dropdown{
+      opacity:1;
+      visibility:visible;
+      transform:translateY(0);
+    }
+
+    .dropdown a{
+      display:block;
+      padding:15px;
+      color:#333;
+      text-decoration:none;
+      border-bottom:1px solid #eee;
+      transition:0.3s;
+    }
+
+    .dropdown a:hover{
+      background:#f1f1f1;
+      color:#00bfff;
+      padding-left:20px;
+    }
+
+    .avatar{
+      text-align:center;
+      padding:20px;
+      background:#fafafa;
+    }
+
+    .avatar img{
+      width:70px;
+      height:70px;
+      border-radius:50%;
+      margin-bottom:10px;
+    }
+
+    .avatar h3{
+      color:#333;
+    }
+
+    .Inicio{
+    background: linear-gradient(to top, rgba(215, 233, 240, 0), rgba(176, 207, 226, 0)),
+    url(../img/pexels-jokassis-12847937.jpg);
+    background-size: cover;
+    height: 89.2vh;
+    color: rgb(240, 240, 194);
+    display: flex;
+    align-items: center;
+}
+
+.Minombre{
+    animation: cambio-color 5s linear infinite;
+    font-size: 60px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+@keyframes cambio-color{
+    10%{color: rgb(198, 75, 31);}
+    20%{color:rgb(76, 74, 42) ;}
+    30%{color: #4e4513;}
+    40%{color: rgb(103, 159, 14);}
+    50%{color: rgb(64, 197, 37);}
+    60%{color: rgb(34, 147, 240);}
+    70%{color: rgb(13, 23, 165); ;}
+    80%{color:rgb(72, 7, 223) ;}
+    90%{color: rgb(128, 15, 81);}
+    100%{color: rgb(165, 28, 46);}
+}
+
+.contenido{
+    display: flex;
+    margin-left: 34rem;
+    margin-top: 1rem;
+}
+
+    /*.contenido__inicio{
+
+    }/*
